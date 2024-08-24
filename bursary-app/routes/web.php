@@ -1,22 +1,13 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BursaryApplicationController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 
 Route::get('/auth/register', function () {
     return view('auth/register');
@@ -26,16 +17,19 @@ Route::get('/auth/login', function () {
     return view('auth/login');
 });
 
-Route::get('/', function () {
-    return view('welcome');
-})->middleware(['auth', 'verified'])->name('home');
-
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::post('/contact', [ContactController::class, 'sendContactForm'])->name('contact.send');
+
 require __DIR__.'/auth.php';
 
-Route::post('/contact', [ContactController::class, 'sendContactForm'])->name('contact.send');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/bursary-application', [BursaryApplicationController::class, 'showForm'])->name('bursary.application');
+    Route::post('/bursary-application', [BursaryApplicationController::class, 'submitForm'])->name('bursary.application.submit');
+});
+
