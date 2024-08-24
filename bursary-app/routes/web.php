@@ -33,3 +33,10 @@ Route::middleware('auth')->group(function () {
     Route::post('/bursary-application', [BursaryApplicationController::class, 'submitForm'])->name('bursary.application.submit');
 });
 
+Route::middleware('auth')->group(function () {
+    Route::get('/bursary-applications', [BursaryApplicationController::class, 'index'])->name('bursary.index');
+    Route::get('/bursary-application/{id}/edit', [BursaryApplicationController::class, 'edit'])->name('bursary.edit');
+    Route::put('/bursary-application/{id}', [BursaryApplicationController::class, 'update'])->name('bursary.update');
+    Route::delete('/bursary-application/{id}', [BursaryApplicationController::class, 'destroy'])->name('bursary.destroy');
+});
+
