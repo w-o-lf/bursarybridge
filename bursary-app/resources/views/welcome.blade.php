@@ -46,6 +46,13 @@
             <h1 class="text-5xl font-bold mb-4">Welcome to Bursary Bridge</h1>
             <p class="text-xl mb-8">Bridging the Gap Between Students and Financial Aid.</p>
             <p class="text-xl mb-8">Invest in Tomorrow's Leaders: Support Bursaries Here.</p>
+
+<!-- resources/views/home.blade.php -->
+
+<a href="{{ url('/donate') }}" class="bg-blue-600 text-white px-6 py-3 rounded-md text-lg hover:bg-blue-700">
+    Donate
+</a>
+
             <a href="#services" class="bg-blue-600 text-white px-6 py-3 rounded-md text-lg hover:bg-blue-700">Learn More</a>
         </section>
 

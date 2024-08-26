@@ -40,3 +40,9 @@ Route::middleware('auth')->group(function () {
     Route::delete('/bursary-application/{id}', [BursaryApplicationController::class, 'destroy'])->name('bursary.destroy');
 });
 
+// routes/web.php
+
+Route::get('/donate', function () {
+    return view('donate');
+});
+
