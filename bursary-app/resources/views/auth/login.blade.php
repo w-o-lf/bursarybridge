@@ -3,20 +3,20 @@
     <div class="min-h-screen bg-gray-100 dark:bg-gray-900 flex items-center justify-center">
         <!-- Card Container -->
         <div class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden grid grid-cols-1 md:grid-cols-2 max-w-4xl w-full">
-            
+
             <!-- Image Card -->
             <div class="hidden md:block bg-blue-900 text-white p-8">
-                <div class="flex flex-col justify-center items-center h-full">
-                    <img src="{{ asset('images/your-image-1.png') }}" alt="Image 1" class="h-48 mb-4">
-                    <img src="{{ asset('images/your-image-2.png') }}" alt="Image 2" class="h-48">
-                </div>
+                    <div class="flex flex-col justify-center items-center h-full">
+                        <img src="{{ asset('images/students 2.png') }}" alt="Image 1" class="h-48 mb-4">
+                        <img src="{{ asset('images/students 1.png') }}" alt="Image 2" class="h-48">
+                    </div>
             </div>
 
             <!-- Login Card -->
             <div class="p-8 w-full">
                 <!-- Logo -->
                 <div class="flex justify-center mb-4">
-                    <img src="{{ asset('images/your-logo.png') }}" alt="Logo" class="h-16">
+                    <img src="{{ asset('images/bb logo.png') }}" alt="Logo" class="h-16">
                 </div>
 
                 <!-- Session Status -->
