@@ -64,7 +64,7 @@
                     <img src="{{ asset('images/success.jpg') }}" alt="Success Story" class="w-full h-60 object-cover rounded-t-lg mb-4">
                     <h2 class="text-2xl font-bold mb-4">Success Story</h2>
                     <p class="mb-4">Diana was a student with a dream of becoming a doctor but she comes from a poor background. Thanks to the support from Bursary Bridge, she was able to enrol and start pursuing her medical degree at one of the top colleges and so far is producing outstanding results.</p>
-                    <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-500">Read More</a>
+                    <a href="{{ route('success-story') }}" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-500">Read More</a>
                 </div>
 
                 <!-- Events -->
@@ -72,15 +72,15 @@
                     <img src="{{ asset('images/bb logo.png') }}" alt="Upcoming Event" class="w-full h-60 object-cover rounded-t-lg mb-4">
                     <h2 class="text-2xl font-bold mb-4">Upcoming Event</h2>
                     <p class="mb-4">Join us for our annual fundraising gala to support students in need. Enjoy an evening of entertainment and philanthropy. Date: October 20, 2024.</p>
-                    <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-500">Buy Tickets</a>
+                    <a href="{{ route('buy-tickets') }}" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-500">Buy Tickets</a>
                 </div>
 
                 <!-- Patners -->
                 <div class="bg-blue-800 p-6 rounded-lg shadow-lg">
                     <img src="{{ asset('images/helb logo.png') }}" alt="Our Partners" class="w-full h-60 object-cover rounded-t-lg mb-4">
                     <h2 class="text-2xl font-bold mb-4">Our Partners</h2>
-                    <p class="mb-4">Partner 1 is a leading organization in educational support, providing resources and funding for students in need. Partner 2 offers scholarships and grants to support students pursuing higher education.</p>
-                    <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-500">Learn More</a>
+                    <p class="mb-4">Higher Education Loans Board in Kenya is a leading organization in educational support, providing resources and funding for students in need.</p>
+                    <a href="{{ route('partners') }}" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-500">Learn More</a>
                 </div>
             </div>
         </section>
@@ -213,8 +213,8 @@
                     <div class="mb-8">
                         <h2 class="text-2xl font-bold">Additional Contact Information</h2>
                         <p>Email: <a href="mailto:support@bursarybridge.com" class="underline">support@bursarybridge.com</a></p>
-                        <p>Phone: <a href="tel:+123456789" class="underline">+123456789</a></p>
-                        <p>Address: 1234 Education Lane, Learning City, 56789</p>
+                        <p>Phone: <a href="tel:+254728344465" class="underline">+254728344465</a></p>
+                        <p>Address: Faraja House, Tatu City, 56789</p>
                     </div>
 
                 </div>

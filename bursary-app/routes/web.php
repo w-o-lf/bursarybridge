@@ -4,6 +4,9 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BursaryApplicationController;
+use App\Http\Controllers\PartnerController;
+use App\Http\Controllers\SuccessStoryController;
+use App\Http\Controllers\TicketController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -46,3 +49,8 @@ Route::get('/donate', function () {
     return view('donate');
 });
 
+Route::get('/success-story', [SuccessStoryController::class, 'show'])->name('success-story');
+
+Route::get('/buy-tickets', [TicketController::class, 'index'])->name('buy-tickets');
+
+Route::get('/partners', [PartnerController::class, 'index'])->name('partners');
